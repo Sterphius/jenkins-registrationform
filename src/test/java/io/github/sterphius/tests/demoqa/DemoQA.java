@@ -1,10 +1,8 @@
-package io.github.sterphius.tests;
+package io.github.sterphius.tests.demoqa;
 
 import com.codeborne.selenide.*;
-import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import java.nio.file.Paths;
@@ -14,14 +12,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
-public class DemoQA {
-
-    @BeforeAll
-    static void beforeAll() {
-        Configuration.browserSize = "1920x1080";
-        //Configuration.browser = "firefox";
-    }
-
+public class DemoQA extends TestBase {
     @Test
     void fillFormTest() {
         String
