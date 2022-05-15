@@ -19,7 +19,7 @@ public class DemoQA {
     @BeforeAll
     static void beforeAll() {
         Configuration.browserSize = "1920x1080";
-        Configuration.browser = "firefox";
+        //Configuration.browser = "firefox";
     }
 
     @Test
